@@ -1,3 +1,4 @@
-FROM n8nio/n8n:latest
+FROM n8nio/n8n:1.121.3-alpine
 USER root
-RUN cat /etc/os-release
+RUN apk add --update --no-cache ffmpeg
+USER node
